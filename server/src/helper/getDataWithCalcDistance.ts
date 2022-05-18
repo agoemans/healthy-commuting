@@ -7,7 +7,7 @@ const getNumOfDaysInMonth = (month: number, year: number) => {
 
 const isWeekDay = (year: number, month: number, day) => {
     const dayOfWeek: number = new Date(year, month, day).getDay();
-    return dayOfWeek >=1 && day <= 5;
+    return dayOfWeek >=1 && dayOfWeek <= 5;
 }
 
 const getWorkDays = (month: number, year: number) => {
@@ -18,6 +18,7 @@ const getWorkDays = (month: number, year: number) => {
             workDays++;
         }
     }
+
     return workDays;
 }
 
@@ -32,7 +33,7 @@ const getDistanceCompensation = (data: EmployeeModel) => {
     const distancePerDay: number = distanceInKmOneWay * 2;
     let compensationPerDay: number = 0.50;
 
-    switch(transportMethod) {
+    switch(transportMethod.toLowerCase()) {
         case 'car':
             compensationPerDay = 0.10;
             break;
@@ -72,8 +73,6 @@ export const getDataWithCalcDistance = (data: TransportMonthModel) => {
         let updatedEmployee: UpdatedEmployee = getEmployeeWithCommuteCalculation(employee, workDays);
         updatedEmployees.push(updatedEmployee);
     })
-
-    console.log('updatedEmployees', updatedEmployees);
 
     return {
         year,

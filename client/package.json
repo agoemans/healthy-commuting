@@ -1,5 +1,6 @@
 {
-  "name": "plant-lib-client",
+  "name": "healthy-commuting-client",
+  "title": "Healthy Community",
   "version": "1.0.0",
   "description": "This is the client section of the repo",
   "main": "dist/app.js",
@@ -38,13 +39,19 @@
     "tslint": "^6.1.3"
   },
   "dependencies": {
+    "@babel/preset-typescript": "^7.16.7",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.0",
     "@types/react-router-dom": "^5.3.2",
+    "@types/uuid": "^8.3.4",
     "mysql": "^2.18.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.3.0",
     "typescript": "^4.5.4",
+    "uuid": "^8.3.2",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^3.11.3"

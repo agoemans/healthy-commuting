@@ -6,49 +6,49 @@ export const currentMonthData: TransportMonthModel = {
         {
             firstName: 'Paul',
             lastName: null,
-            transportMethod: 'car',
+            transportMethod: 'Car',
             distanceInKmOneWay: 60,
             workingDaysPerWeek: 5
         },
         {
             firstName: 'Martin',
             lastName: null,
-            transportMethod: 'bus',
+            transportMethod: 'Bus',
             distanceInKmOneWay: 8,
             workingDaysPerWeek: 4
         },
         {
             firstName: 'Jeroen',
             lastName: null,
-            transportMethod: 'bike',
+            transportMethod: 'Bike',
             distanceInKmOneWay: 9,
             workingDaysPerWeek: 5
         },
         {
             firstName: 'Tineke',
             lastName: null,
-            transportMethod: 'bike',
+            transportMethod: 'Bike',
             distanceInKmOneWay: 4,
             workingDaysPerWeek: 3
         },
         {
             firstName: 'Arnout',
             lastName: null,
-            transportMethod: 'train',
+            transportMethod: 'Train',
             distanceInKmOneWay: 23,
             workingDaysPerWeek: 5
         },
         {
             firstName: 'Mathijs',
             lastName: null,
-            transportMethod: 'bike',
+            transportMethod: 'Bike',
             distanceInKmOneWay: 11,
             workingDaysPerWeek: 4.5
         },
         {
             firstName: 'Rens',
             lastName: null,
-            transportMethod: 'car',
+            transportMethod: 'Car',
             distanceInKmOneWay: 12,
             workingDaysPerWeek: 5
         }

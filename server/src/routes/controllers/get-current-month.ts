@@ -1,12 +1,14 @@
 import { Request, Response } from 'express';
 
 import { repository } from '../../persistence';
+import { getDataWithCalcDistance } from '../../helper/getDataWithCalcDistance';
 
 export const getCurrentMonth = async (req: Request, res: Response) => {
     try {
-        const getCalendarResult = await repository.getCurrentMonth();
+        const monthResult = await repository.getCurrentMonth();
+        const updatedResult = getDataWithCalcDistance(monthResult);
         res.status(200);
-        res.send(getCalendarResult);
+        res.send(updatedResult);
 
     } catch (err) {
         console.log(err);

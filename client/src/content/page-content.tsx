@@ -76,9 +76,9 @@ export default function PageContent() {
             {employees.map(( a: any, idx: number) =>
                 <RowGroup>
                     <ContentRow>{a.firstName}</ContentRow>
-                    <ContentRow>{a.transportMethod}</ContentRow>
-                    <ContentRow>{a.distanceInKmOneWay}</ContentRow>
-                    <ContentRow>{a.workingDaysPerWeek}</ContentRow>
+                    <ContentRow>{a.transport}</ContentRow>
+                    <ContentRow>{a.traveledDistance}</ContentRow>
+                    <ContentRow>{a.compensationForMonth}</ContentRow>
                 </RowGroup>
             )}
         </Wrapper>

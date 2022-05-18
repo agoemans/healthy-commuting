@@ -1,6 +1,7 @@
 import { EmployeeModel } from './employee';
 
 export interface TransportMonthModel {
-    monthNumber: number;
+    year: number;
+    month: number;
     employees: EmployeeModel[];
 }

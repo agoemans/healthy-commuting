@@ -37,7 +37,8 @@ export class MySqlClient implements Repository {
             const monthResult: any = await this.query(query);
 
             return {
-                monthNumber: 5,
+                year: 2022,
+                month: 5,
                 employees: []
             };
 

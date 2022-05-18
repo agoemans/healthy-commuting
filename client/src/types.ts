@@ -1,8 +1,4 @@
-export enum RouteNames {
-    CURRENT_MONTH = 'currentMonth'
-}
-
-export interface UpdatedEmployee {
+export interface iEmployee {
     firstName: string;
     transport: string;
     traveledDistance: number;

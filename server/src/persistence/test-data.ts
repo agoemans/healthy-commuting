@@ -1,7 +1,8 @@
 import { TransportMonthModel } from '../models'
 
 export const currentMonthData: TransportMonthModel = {
-    monthNumber: 5,
+    year: 2022,
+    month: 5,
     employees: [
         {
             firstName: 'Paul',
